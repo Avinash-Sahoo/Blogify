@@ -34,10 +34,10 @@ const ChatInterface = () => {
     setIsTyping(true);
 
     try {
-      const response = await fetch("https://openrouter.ai/api/v1/chat/completions" , {
+      const response = await fetch(import.meta.env.VITE_DEEPSEEK_API_URL , {
         method: 'POST',
         headers: {
-          "Authorization": "Bearer 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",
+          "Authorization": `Bearer ${import.meta.env.VITE_DEEPSEEK_API_KEY} `,
           "Content-Type": 'application/json',
         },
         body: JSON.stringify({
