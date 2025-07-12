@@ -8,7 +8,7 @@ import RefreshHandler from "./utilis/RefreshHandler";
 // import Products from "./pages/Products";
 import Api from "./pages/Api";
 import AdminLogin from "./pages/admin/AdminLogin";
-import AdminDashboard from "./pages/admin/adminDashboard";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminUsers from "./pages/admin/AdminUsers";
 import AiChat from "./pages/AiChat";
 import Blogs from "./pages/Blogs";
