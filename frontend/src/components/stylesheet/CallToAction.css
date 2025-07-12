@@ -1,0 +1,12 @@
+.cta-section {
+  background-color: #2563eb; /* Same bright blue */
+  font-family: 'Inter', sans-serif;
+}
+
+.cta-section .row > .col {
+  font-size: 16px;
+}
+
+.call{
+    max-width: 650px;
+}

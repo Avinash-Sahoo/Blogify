@@ -1,0 +1,32 @@
+.footer {
+  background-color: #0f172a; /* dark navy */
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-icon {
+  font-size: 16px;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-icon:hover {
+  color: #ffffff;
+}
+
+.footer ul li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  color:#9da4b0;
+}
+
+.footer ul li:hover {
+  color: #fff;
+}
+.para , .foot_nav span{
+    color:#9da4b0;
+}
+
+.head_nav{
+    font-size: 0.9rem;
+}

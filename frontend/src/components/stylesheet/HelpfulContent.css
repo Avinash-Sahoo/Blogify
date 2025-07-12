@@ -1,0 +1,31 @@
+body {
+  font-family: 'Inter', sans-serif;
+  /* background-color: #ffff; */
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.icon-style {
+  font-size: 28px;
+  color: #2563eb;
+}
+.helpful {
+    padding: 5rem 0;
+    background-color: #fff;
+    
+}
+/* .helpful_para{
+    padding: 0 10rem;
+} */
+.helpful_head{
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    padding-bottom: 1rem;
+}

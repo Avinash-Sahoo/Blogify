@@ -1,0 +1,22 @@
+
+.featured{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.post{
+  font-size: 2rem;
+}
+.profile_text{
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.featured_card,.post_card{
+  cursor: pointer;
+}
+.featured_card:hover h3, .post_card:hover h3{
+  color: purple;
+}
