@@ -22,7 +22,7 @@ const Products = () => {
     }
     const handleProducts = ()=>{
 
-    axios.get("http://localhost:3000/products",{
+    axios.get("https://blogify-api-lake.vercel.app/products",{
             headers : {
                 "authentication" : localStorage.getItem("token")
             }
