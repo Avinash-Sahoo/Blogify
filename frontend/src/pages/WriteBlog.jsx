@@ -32,7 +32,7 @@ const WriteBlog = () => {
       return handleError("All Fields Required")
 
     }
-    axios.post("http://localhost:3000/write",postInfo,{
+    axios.post("https://blogify-api-lake.vercel.app/write",postInfo,{
       headers:{
         "authentication" : localStorage.getItem("token")
       }})
