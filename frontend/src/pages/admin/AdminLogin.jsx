@@ -95,7 +95,7 @@ const AdminLogin = () => {
     if(!email || !password){
       return handleError("Email or Password is Required")
     }
-      axios.post("http://localhost:3000/auth/admin/login",adminLoginInfo)
+      axios.post("https://blogify-api-lake.vercel.app/auth/admin/login",adminLoginInfo)
       .then((result)=> {
         // console.log(result.data)
         let {success , msg , error , adminToken , adminDetail} = result.data
