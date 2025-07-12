@@ -29,7 +29,7 @@ const Login = () => {
     }
 
     axios
-      .post("http://localhost:3000/auth/login", loginInfo)
+      .post("https://blogify-api-lake.vercel.app/auth/login", loginInfo)
       .then((result) => {
         let { success, msg, error,token,loggedInUser } = result.data;
         if (success) {
