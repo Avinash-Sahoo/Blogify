@@ -38,7 +38,7 @@ const MyPosts = () => {
   ];
 
   const allPosts = ()=>{
-    axios.get(`http://localhost:3000/mypost`,{
+    axios.get(`https://blogify-api-lake.vercel.app/mypost`,{
       headers:{
         "authentication" : localStorage.getItem("token")
       }}).then((response)=>{
@@ -73,7 +73,7 @@ const MyPosts = () => {
 
 
   const handleDelete = (id)=>{
-    axios.post(`http://localhost:3000/mypost/delete/${id}`)
+    axios.post(`https://blogify-api-lake.vercel.app/mypost/delete/${id}`)
     .then((response)=>{
             let {success,msg,error} = response.data
             console.log(response.data)
