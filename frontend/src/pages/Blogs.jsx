@@ -28,7 +28,7 @@ const Blogs = () => {
   };
 
   const handleBlogs = ()=>{
-    axios.get("http://localhost:3000/blogs",{
+    axios.get("https://blogify-api-lake.vercel.app/blogs",{
       headers:{
         "authentication" : localStorage.getItem("token")
       }}).then((response)=>{
