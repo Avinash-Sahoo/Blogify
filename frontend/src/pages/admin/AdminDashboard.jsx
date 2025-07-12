@@ -20,7 +20,7 @@ const AdminDashboard = () => {
     }
     const handleBackend = ()=>{
      
-        axios.get("http://localhost:3000/admin/dashboard",{
+        axios.get("https://blogify-api-lake.vercel.app/admin/dashboard",{
             headers : {
                 "authorization" : localStorage.getItem("adminToken")
             }
