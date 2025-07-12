@@ -10,7 +10,7 @@ const AiChat = () => {
   const navigate = useNavigate()
 
   const handleAI = ()=>{
-    axios.get("http://localhost:3000/aichat",{
+    axios.get("https://blogify-api-lake.vercel.app/aichat",{
       headers:{
         "authentication" : localStorage.getItem("token")
       }
