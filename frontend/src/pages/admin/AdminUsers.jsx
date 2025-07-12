@@ -26,7 +26,7 @@ const AdminUsers = () => {
     const handleDelete = (id)=>{
       setIsLoading(true)
       setUserId(id)
-      axios.post(`http://localhost:3000/admin/users/delete/${id}`)
+      axios.post(`https://blogify-api-lake.vercel.app/admin/users/delete/${id}`)
       .then((result)=>{
          let {success , msg} = result.data
          if(success === false){
@@ -48,7 +48,7 @@ const AdminUsers = () => {
     }
        
     const handleAllUsers = ()=>{
-      axios.get("http://localhost:3000/admin/users",{
+      axios.get("https://blogify-api-lake.vercel.app/admin/users",{
           headers : {
             "authorization" : localStorage.getItem("adminToken")
           }
