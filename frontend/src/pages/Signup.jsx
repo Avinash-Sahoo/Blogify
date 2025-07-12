@@ -31,7 +31,7 @@ const Signup = () => {
     
 
     axios
-      .post("http://localhost:3000/auth/signup", signupInfo)
+      .post("https://blogify-api-lake.vercel.app/auth/signup", signupInfo)
       .then((result) => {
         console.log(result);
         let { success, msg, error } = result.data;
