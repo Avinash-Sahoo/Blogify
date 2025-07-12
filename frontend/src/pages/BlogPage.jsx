@@ -27,7 +27,7 @@ const BlogPage = () => {
     }
   };
   const oneBlog = ()=>{
-    axios.get(`http://localhost:3000/blog/${id}`,{
+    axios.get(`https://blogify-api-lake.vercel.app/blog/${id}`,{
       headers:{
         "authentication" : localStorage.getItem("token")
       }}).then((response)=>{
